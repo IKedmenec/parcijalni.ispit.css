@@ -19,26 +19,9 @@ body {
     font-size: 8vw;
     font-weight: bold;
     padding: 5%;
-    /*top: -80%;*/
+    top: -80%;
     border-radius: 15%;
 }
-
-/*
-.container div:first-child {
-    animation: slide-down 1.5s ease-in-out forwards;
-    background: gray;
-}
-
-.container div:nth-child(2) {
-    animation: slide-down 2.5s ease-in-out forwards;
-    background: gray;
-}
-
-.container div:nth-child(3) {
-    animation: slide-down 2.5s ease-in-out forwards;
-    background: gray;
-}
-*/
 
 .c1 {
     position: relative;
@@ -48,8 +31,16 @@ body {
     width: 150px;
     height: 150px;
     animation: os 1.5s ease-in-out forwards;
+    animation-delay: 1s;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform 0.3s;
 }
 
+.c1:hover {
+    transform: scale(0.9);
+    transition: transform 0.3s;
+}
 
 .s2 {
     position: relative;
@@ -60,8 +51,16 @@ body {
     width: 150px;
     height: 150px;
     animation: os 2.5s ease-in-out forwards;
+    animation-delay: 2s;
+    cursor: pointer;
+    transform: perspective(600px) rotateY(-30deg);
+    transition: transform 0.3s;
 }
 
+.s2:hover {
+    transform: perspective(600px) rotateY(30deg);
+    transition: transform 0.3s
+}
 
 .s3 {
     position: relative;
@@ -72,8 +71,16 @@ body {
     width: 150px;
     height: 150px;
     animation: os 3.5s ease-in-out forwards;
+    animation-delay: 3s;
+    cursor: pointer;
+    transform: perspective(600px) rotateY(-30deg);
+    transition: transform 0.3s;
 }
 
+.s3:hover {
+    transform: perspective(600px) rotateY(30deg);
+    transition: transform 0.3s
+}
 
 
 @keyframes os {
