@@ -24,15 +24,9 @@ body {
 }
 
 .c1 {
-    position: relative;
-    content: "";
     background-color: gray;
-    border-radius: 15%;
-    width: 150px;
-    height: 150px;
     animation: os 1.5s ease-in-out forwards;
     animation-delay: 1s;
-    cursor: pointer;
     transform: scale(1.2);
     transition: transform 0.3s;
 }
@@ -43,16 +37,9 @@ body {
 }
 
 .s2 {
-    position: relative;
-    content: "";
-    animation: top;
     background-color: red;
-    border-radius: 15%;
-    width: 150px;
-    height: 150px;
     animation: os 2.5s ease-in-out forwards;
     animation-delay: 2s;
-    cursor: pointer;
     transform: perspective(600px) rotateY(-30deg);
     transition: transform 0.3s;
 }
@@ -63,16 +50,9 @@ body {
 }
 
 .s3 {
-    position: relative;
-    content: "";
-    animation: top;
     background-color: orangered;
-    border-radius: 15%;
-    width: 150px;
-    height: 150px;
     animation: os 3.5s ease-in-out forwards;
     animation-delay: 3s;
-    cursor: pointer;
     transform: perspective(600px) rotateY(-30deg);
     transition: transform 0.3s;
 }
@@ -85,7 +65,6 @@ body {
 
 @keyframes os {
     0% {
-        transform: scaleY(1);
         top: -100vh;
         width: 100px;
     }
